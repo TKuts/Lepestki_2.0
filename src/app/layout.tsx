@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./styles/globals.css";
 import styles from "./layout.module.css"
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Fooret";
+import NavBar from "@/components/NavBar/NavBar";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +20,12 @@ const MainLayout = ({
 }>) => {
 	return (
 		<html lang="en">
+			<div className={styles.container}>
+				<NavBar />
+				<main className={inter.className}>{children}</main>
+				<Footer />
+			</div>
 
-			<Navbar />
-			<main className={inter.className}>{children}</main>
-			<Footer />
 
 		</html>
 	);
