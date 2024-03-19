@@ -13,22 +13,20 @@ export const metadata: Metadata = {
 	keywords: "flowers"
 };
 
-const MainLayout = ({
+export default function MainLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
-}>) => {
+}>) {
 	return (
 		<html lang="en">
-			<div className={styles.container}>
+			<body>
 				<NavBar />
 				<main className={inter.className}>{children}</main>
 				<Footer />
-			</div>
-
+			</body>
 
 		</html>
 	);
 }
 
-export default MainLayout

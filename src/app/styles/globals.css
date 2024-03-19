@@ -1,3 +1,12 @@
 @import url("./reset.css");
 @import url("./variables.css");
 
+:root {
+  background-color: #fffcea;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

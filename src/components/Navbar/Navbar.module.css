@@ -1,4 +1,12 @@
+.header {
+  background-color: #fffcea;
+}
 .nav {
   display: flex;
   gap: 100px;
+  align-items: center;
+  max-width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
