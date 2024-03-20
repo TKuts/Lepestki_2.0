@@ -9,7 +9,7 @@ const NavBarList = ({ list }: PropsList) => {
 		<ul className={styles.meny__list}>
 			{
 				list.map(string => (
-					<li key={string}>{string}</li>
+					<li className={styles.menu__item} key={string}>{string}</li>
 				))
 			}
 		</ul>

@@ -1,12 +1,36 @@
 .header {
+  position: fixed;
   background-color: #fffcea;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  border-bottom: 1px solid #500210;
+  padding: 16px 0 16px 0;
 }
 .nav {
   display: flex;
   gap: 100px;
   align-items: center;
+  justify-content: space-between;
   max-width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+  max-width: 102px;
+}
+
+.logo__text {
+  position: relative;
+  color: #862145;
+  font-size: 13px;
+  font-style: normal;
+  font-family: "Jomolhari", serif;
+  font-weight: 400;
+  text-transform: none;
+  bottom: 10px;
 }

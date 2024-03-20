@@ -5,13 +5,16 @@ import Logo from "../../../public/logo.svg"
 
 const NavBar = () => {
 	return (
-		<div className={styles.header}>
+		<header className={styles.header}>
 			<nav className={styles.nav}>
 				<NavBarList list={["Головна", "Про нас", "Послуги"]} />
-				<Image src={Logo} alt="Logo" />
+				<div>
+					<Image className={styles.logo} src={Logo} alt="Logo" />
+					<p className={styles.logo__text}>студія флористики</p>
+				</div>
 				<NavBarList list={["Приклади робіт", "Відгуки", "Контакти"]} />
 			</nav>
-		</div>
+		</header>
 
 	)
 }

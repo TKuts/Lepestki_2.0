@@ -2,3 +2,11 @@
   display: flex;
   gap: 50px;
 }
+.menu__item {
+  color: #862145;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+	cursor: pointer;
+}
